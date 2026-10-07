@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stock Center — DOBN CAPITAL</title>
+<title>Stock Center — HTD SECURITIES</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Sora:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -190,7 +190,7 @@ body{font-family:var(--ff-b);background:var(--cream);color:var(--ink);font-weigh
   <p class="bc"><i class="fas fa-home"></i> &nbsp;Trang Chủ &nbsp;/&nbsp; Stock Center</p>
   <h1>Stock <em>Center</em></h1>
   <p>Analysis Report &nbsp;·&nbsp; Price Data</p>
-  <div><div class="data-badge"><i class="fas fa-database"></i>&nbsp; Dữ liệu DOBN Sercurities · 2021–2026</div></div>
+  <div><div class="data-badge"><i class="fas fa-database"></i>&nbsp; Dữ liệu HTD SECURITIES · 2021–2026</div></div>
 </section>
 
 <!-- TAB SWITCHER -->
@@ -250,7 +250,7 @@ body{font-family:var(--ff-b);background:var(--cream);color:var(--ink);font-weigh
     <!-- Notice -->
     <div class="data-notice">
       <i class="fas fa-info-circle"></i>
-      Dữ liệu từ DOBN Sercurities<strong>2021–06/2026</strong> · 39 mã cổ phiếu 
+      Dữ liệu từ HTD SECURITIES<strong>2021–06/2026</strong> · 39 mã cổ phiếu 
     </div>
 
     <div class="controls-card">
@@ -308,7 +308,7 @@ body{font-family:var(--ff-b);background:var(--cream);color:var(--ink);font-weigh
 </div>
 
 <!-- FOOTER -->
-<footer><p>© 2026 DOBN CAPITAL - Demo Website</p></footer>
+<footer><p>© 2026 HTD SECURITIES - Demo Website</p></footer>
 
 <!-- ═══════════════════ SCRIPTS ═══════════════════ -->
 <script src="js/recommendation.js"></script>
@@ -351,7 +351,7 @@ function renderCards(list) {
     const ex    = (stock.exchange || '').toUpperCase().trim();
     const badge = EXCHANGE_BADGE[ex] || '';
     const a = document.createElement('a');
-    a.href        = `pdf/${stock.code}.pdf`;
+    a.href        = `png/${stock.code === 'BID' ? 'BIDV' : stock.code}.png`;
     a.target      = '_blank';
     a.className   = 'company-card';
     a.dataset.exchange = ex;

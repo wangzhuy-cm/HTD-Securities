@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DOBN CAPITAL — Quản Lý Quỹ Đầu Tư</title>
+<title>HTD SECURITIES — Quản Lý Quỹ Đầu Tư</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Sora:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -239,7 +239,7 @@ body{font-family:var(--ff-b);background:var(--cream);color:var(--ink);overflow-x
 @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
 /* ════════════════════════════════════
-   DOBN LETTERS — SLOGAN SECTION
+   HTD LETTERS — SLOGAN SECTION
 ════════════════════════════════════ */
 .dobn-section{
   background:
@@ -276,7 +276,7 @@ body{font-family:var(--ff-b);background:var(--cream);color:var(--ink);overflow-x
 .dobn-header h2 em{font-style:italic;color:var(--gold2);}
 
 .dobn-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
   gap:0;max-width:1200px;margin:0 auto;
   position:relative;z-index:1;
   border:1px solid rgba(196,146,42,.12);border-radius:var(--r);overflow:hidden;
@@ -323,7 +323,7 @@ body{font-family:var(--ff-b);background:var(--cream);color:var(--ink);overflow-x
 .dobn-card:hover .dc-big{transform:translateY(-5px);}
 
 .dc-word{
-  font-size:.68rem;letter-spacing:3.5px;text-transform:uppercase;
+  font-size:.72rem;letter-spacing:1.6px;text-transform:uppercase;
   color:var(--gold);font-weight:500;margin-bottom:22px;opacity:.85;
 }
 .dc-divider{
@@ -334,7 +334,7 @@ body{font-family:var(--ff-b);background:var(--cream);color:var(--ink);overflow-x
 .dobn-card:hover .dc-divider{width:52px;background:var(--gold);}
 
 .dc-title{font-size:.95rem;font-weight:500;color:var(--white);margin-bottom:10px;line-height:1.35;}
-.dc-body{font-size:.82rem;color:rgba(255,255,255,.4);line-height:1.72;font-weight:300;}
+.dc-body{font-size:.88rem;color:rgba(255,255,255,.7);line-height:1.8;font-weight:300;}
 
 .dc-icon{
   position:absolute;top:44px;right:32px;
@@ -667,10 +667,8 @@ h2.sec-h2.light{color:var(--white);}
   .hero-stats-panel{display:none;}
   .hero-video-bg{display:none;}
   .hero-content{padding:0 40px;max-width:100%;}
-  .dobn-grid{grid-template-columns:repeat(2,1fr);}
-  .dobn-card:nth-child(2){border-right:none;}
-  .dobn-card:nth-child(3){border-right:1px solid rgba(196,146,42,.12);border-top:1px solid rgba(196,146,42,.12);}
-  .dobn-card:nth-child(4){border-top:1px solid rgba(196,146,42,.12);}
+  .dobn-section{padding:80px 32px;}
+  .dobn-card{padding:40px 24px 36px;}
   .services-grid{grid-template-columns:repeat(2,1fr);}
   .perf-grid{grid-template-columns:repeat(2,1fr);}
   .perf-item:nth-child(2){border-right:none;}
@@ -740,13 +738,13 @@ h2.sec-h2.light{color:var(--white);}
   </div>
 
   <div class="hero-content">
-    <div class="hero-eyebrow"><span></span>DOBN Capital &nbsp;—&nbsp; Quản Lý Quỹ Đầu Tư</div>
+    <div class="hero-eyebrow"><span></span>HTD SECURITIES &nbsp;—&nbsp; Quản Lý Quỹ Đầu Tư</div>
     <h1 class="hero-h1">
       Kiến Tạo<br>
       <em>Tài Sản Vượt Trội.</em>
     </h1>
     <p class="hero-tagline">
-      Dedication <span class="dot">·</span> Opportunity <span class="dot">·</span> Beyond <span class="dot">·</span> Network
+      Honest Insight. Thoughtful Strategy. Disciplined Investing.
     </p>
     <p class="hero-desc">
       Công ty quản lý quỹ độc lập, kết hợp phân tích định lượng chuyên sâu với triết lý đầu tư có trách nhiệm — kiến tạo giá trị bền vững cho nhà đầu tư Việt Nam.
@@ -795,8 +793,8 @@ h2.sec-h2.light{color:var(--white);}
     <div class="ticker-item">USD/VND <span class="t-sep">|</span> 25.340 <span class="t-up">▲ +0.05%</span></div>
     <div class="ticker-item">Vàng SJC <span class="t-sep">|</span> 82,5 triệu/lượng <span class="t-up">▲ +1,2%</span></div>
     <div class="ticker-item">Lãi suất 12T <span class="t-sep">|</span> 5,8%/năm <span class="t-sep">|</span> Kỳ hạn ON: 4,1%</div>
-    <div class="ticker-item">DOBN Growth Fund <span class="t-sep">|</span> +24.3% YTD <span class="t-up">▲</span></div>
-    <div class="ticker-item">DOBN Bond Fund <span class="t-sep">|</span> +9.8% YTD <span class="t-up">▲</span></div>
+    <div class="ticker-item">HTD Growth Fund <span class="t-sep">|</span> +24.3% YTD <span class="t-up">▲</span></div>
+    <div class="ticker-item">HTD Bond Fund <span class="t-sep">|</span> +9.8% YTD <span class="t-up">▲</span></div>
     <!-- set 2 (duplicate for seamless loop) -->
     <div class="ticker-item">VN-Index <span class="t-sep">|</span> 1.287,45 <span class="t-up">▲ +0.82%</span></div>
     <div class="ticker-item">HNX-Index <span class="t-sep">|</span> 228,12 <span class="t-dn">▼ -0.31%</span></div>
@@ -804,52 +802,44 @@ h2.sec-h2.light{color:var(--white);}
     <div class="ticker-item">USD/VND <span class="t-sep">|</span> 25.340 <span class="t-up">▲ +0.05%</span></div>
     <div class="ticker-item">Vàng SJC <span class="t-sep">|</span> 82,5 triệu/lượng <span class="t-up">▲ +1,2%</span></div>
     <div class="ticker-item">Lãi suất 12T <span class="t-sep">|</span> 5,8%/năm <span class="t-sep">|</span> Kỳ hạn ON: 4,1%</div>
-    <div class="ticker-item">DOBN Growth Fund <span class="t-sep">|</span> +24.3% YTD <span class="t-up">▲</span></div>
-    <div class="ticker-item">DOBN Bond Fund <span class="t-sep">|</span> +9.8% YTD <span class="t-up">▲</span></div>
+    <div class="ticker-item">HTD Growth Fund <span class="t-sep">|</span> +24.3% YTD <span class="t-up">▲</span></div>
+    <div class="ticker-item">HTD Bond Fund <span class="t-sep">|</span> +9.8% YTD <span class="t-up">▲</span></div>
   </div>
 </div>
 
 <!-- ══════════════════════════════════
-     D·O·B·N SLOGAN
+     H·T·D — CORE PHILOSOPHY
 ══════════════════════════════════ -->
-<section class="dobn-section">
-  <div class="dobn-watermark">DOBN</div>
+<section class="dobn-section" aria-labelledby="htd-philosophy-title">
+  <div class="dobn-watermark" aria-hidden="true">HTD</div>
   <div class="dobn-header reveal">
     <div class="etag">Triết Lý Cốt Lõi</div>
-    <h2>Bốn giá trị <em>định hình</em> chúng tôi</h2>
+    <h2 id="htd-philosophy-title">Ba giá trị <em>định hình</em> chúng tôi</h2>
   </div>
   <div class="dobn-grid">
-    <div class="dobn-card reveal" data-l="D">
-      <i class="dc-icon fas fa-heart"></i>
-      <div class="dc-big">D</div>
-      <div class="dc-word">Dedication</div>
+    <div class="dobn-card reveal" data-l="H">
+      <i class="dc-icon fas fa-search" aria-hidden="true"></i>
+      <div class="dc-big" aria-hidden="true">H</div>
+      <div class="dc-word">Honest Insight.</div>
       <div class="dc-divider"></div>
-      <div class="dc-title">Tận Tâm & Cam Kết</div>
-      <div class="dc-body">Mỗi quyết định đầu tư đều được thực hiện với sự tận tâm tuyệt đối. Chúng tôi đặt lợi ích của nhà đầu tư lên trên hết, cam kết minh bạch và bảo vệ vốn trong mọi điều kiện thị trường.</div>
+      <div class="dc-title">Phân Tích Trung Thực</div>
+      <div class="dc-body">Chúng tôi phân tích dựa trên dữ liệu, minh bạch về giả định và thẳng thắn về rủi ro. Mỗi nhận định đều hướng đến việc giúp nhà đầu tư hiểu rõ cơ hội và giới hạn của quyết định đầu tư.</div>
     </div>
-    <div class="dobn-card reveal rv1" data-l="O">
-      <i class="dc-icon fas fa-binoculars"></i>
-      <div class="dc-big">O</div>
-      <div class="dc-word">Opportunity</div>
+    <div class="dobn-card reveal rv1" data-l="T">
+      <i class="dc-icon fas fa-chess-knight" aria-hidden="true"></i>
+      <div class="dc-big" aria-hidden="true">T</div>
+      <div class="dc-word">Thoughtful Strategy.</div>
       <div class="dc-divider"></div>
-      <div class="dc-title">Nắm Bắt Cơ Hội</div>
-      <div class="dc-body">Thị trường luôn ẩn chứa cơ hội cho người có đủ kiến thức và kỷ luật. Đội ngũ phân tích của chúng tôi liên tục tìm kiếm, đánh giá và khai thác những cơ hội sinh lời bền vững trước thị trường.</div>
+      <div class="dc-title">Chiến Lược Thấu Đáo</div>
+      <div class="dc-body">Mỗi chiến lược được cân nhắc từ mục tiêu tài chính, thời hạn đầu tư đến khả năng chấp nhận rủi ro. HTD kết hợp nghiên cứu chuyên sâu với góc nhìn dài hạn để xây dựng kế hoạch phù hợp cho từng nhà đầu tư.</div>
     </div>
-    <div class="dobn-card reveal rv2" data-l="B">
-      <i class="dc-icon fas fa-rocket"></i>
-      <div class="dc-big">B</div>
-      <div class="dc-word">Beyond</div>
+    <div class="dobn-card reveal rv2" data-l="D">
+      <i class="dc-icon fas fa-shield-alt" aria-hidden="true"></i>
+      <div class="dc-big" aria-hidden="true">D</div>
+      <div class="dc-word">Disciplined Investing.</div>
       <div class="dc-divider"></div>
-      <div class="dc-title">Vượt Ra Ngoài Giới Hạn</div>
-      <div class="dc-body">Chúng tôi không dừng lại ở mức trung bình. Từ hiệu suất đầu tư, dịch vụ khách hàng đến ứng dụng công nghệ — DOBN Capital luôn hướng đến tiêu chuẩn cao hơn thị trường và cao hơn kỳ vọng.</div>
-    </div>
-    <div class="dobn-card reveal rv3" data-l="N">
-      <i class="dc-icon fas fa-network-wired"></i>
-      <div class="dc-big">N</div>
-      <div class="dc-word">Network</div>
-      <div class="dc-divider"></div>
-      <div class="dc-title">Mạng Lưới Chiến Lược</div>
-      <div class="dc-body">Sức mạnh của DOBN Capital đến từ hệ sinh thái đối tác chiến lược rộng lớn — từ ngân hàng lưu ký, công ty kiểm toán quốc tế đến các tổ chức tài chính toàn cầu — tạo nền tảng vững chắc cho mọi danh mục.</div>
+      <div class="dc-title">Đầu Tư Kỷ Luật</div>
+      <div class="dc-body">Chúng tôi tuân thủ tiêu chí đầu tư và nguyên tắc quản trị rủi ro, thường xuyên rà soát danh mục khi dữ liệu thay đổi. Kỷ luật giúp giữ quyết định nhất quán và hạn chế tác động của cảm xúc trước biến động thị trường.</div>
     </div>
   </div>
 </section>
@@ -886,7 +876,7 @@ h2.sec-h2.light{color:var(--white);}
     <div class="reveal">
       <div class="sec-tag">Dịch Vụ Của Chúng Tôi</div>
       <h2 class="sec-h2">Giải pháp đầu tư <em>toàn diện</em><br>cho mọi nhu cầu</h2>
-      <p class="sec-sub">Từ quản lý danh mục cá nhân đến quỹ tổ chức — DOBN Capital đồng hành cùng bạn ở mỗi giai đoạn.</p>
+      <p class="sec-sub">Từ quản lý danh mục cá nhân đến quỹ tổ chức — HTD SECURITIES đồng hành cùng bạn ở mỗi giai đoạn.</p>
     </div>
     <div class="services-grid">
       <a href="products.html" class="svc-card reveal">
@@ -900,7 +890,7 @@ h2.sec-h2.light{color:var(--white);}
         <div class="svc-num">02</div>
         <div class="svc-icon"><i class="fas fa-layer-group"></i></div>
         <div class="svc-title">Quỹ Đầu Tư</div>
-        <div class="svc-body">DOBN Growth Fund, Bond Fund và ESG Fund — các quỹ được quản lý chuyên nghiệp với hiệu suất vượt trội so với chỉ số benchmark.</div>
+        <div class="svc-body">HTD Growth Fund, Bond Fund và ESG Fund — các quỹ được quản lý chuyên nghiệp với hiệu suất vượt trội so với chỉ số benchmark.</div>
         <div class="svc-link">Xem thêm <i class="fas fa-arrow-right"></i></div>
       </a>
       <a href="customer.html" class="svc-card reveal rv2">
@@ -942,16 +932,16 @@ h2.sec-h2.light{color:var(--white);}
   <div class="hp-inner">
     <div class="reveal" style="margin-bottom:40px">
       <div class="sec-tag">Our Business</div>
-      <h2 class="sec-h2">Hoạt động <em>thực tế</em><br>của DOBN Capital</h2>
+      <h2 class="sec-h2">Hoạt động <em>thực tế</em><br>của HTD SECURITIES</h2>
     </div>
     <div class="media-layout reveal">
       <div class="gallery-mosaic">
-        <div class="gm-img"><img src="DOBN/7.jpg" alt="DOBN Business"></div>
-        <div class="gm-img"><img src="DOBN/2.jpg" alt="DOBN Business"></div>
-        <div class="gm-img"><img src="DOBN/3.png" alt="DOBN Business"></div>
-        <div class="gm-img"><img src="DOBN/4.jpg" alt="DOBN Business"></div>
-        <div class="gm-img"><img src="DOBN/5.jpg" alt="DOBN Business"></div>
-        <div class="gm-img"><img src="DOBN/6.jpg" alt="DOBN Business"></div>
+        <div class="gm-img"><img src="DOBN/7.jpg" alt="HTD SECURITIES Business"></div>
+        <div class="gm-img"><img src="DOBN/2.jpg" alt="HTD SECURITIES Business"></div>
+        <div class="gm-img"><img src="DOBN/3.png" alt="HTD SECURITIES Business"></div>
+        <div class="gm-img"><img src="DOBN/4.jpg" alt="HTD SECURITIES Business"></div>
+        <div class="gm-img"><img src="DOBN/5.jpg" alt="HTD SECURITIES Business"></div>
+        <div class="gm-img"><img src="DOBN/6.jpg" alt="HTD SECURITIES Business"></div>
       </div>
       <div class="video-block">
         <video autoplay muted loop playsinline>
@@ -959,7 +949,7 @@ h2.sec-h2.light{color:var(--white);}
         </video>
         <div class="vb-overlay">
           <div class="vb-label">Giới thiệu</div>
-          <div class="vb-title">DOBN Capital —<br>Đối tác đầu tư tin cậy</div>
+          <div class="vb-title">HTD SECURITIES —<br>Đối tác đầu tư tin cậy</div>
         </div>
       </div>
     </div>
@@ -974,7 +964,7 @@ h2.sec-h2.light{color:var(--white);}
     <div class="why-grid">
       <div>
         <div class="reveal">
-          <div class="sec-tag">Tại Sao Chọn DOBN</div>
+          <div class="sec-tag">Tại Sao Chọn HTD SECURITIES</div>
           <h2 class="sec-h2">Lợi thế <em>vượt trội</em> khiến chúng tôi<br>khác biệt</h2>
         </div>
         <div class="why-points">
@@ -1044,7 +1034,7 @@ h2.sec-h2.light{color:var(--white);}
   <div class="hp-inner">
     <div class="reveal" style="margin-bottom:40px">
       <div class="sec-tag">Thông Tin Dự Án</div>
-      <h2 class="sec-h2">Nhóm <em>thực hiện</em><br>DOBN Capital</h2>
+      <h2 class="sec-h2">Nhóm <em>thực hiện</em><br>HTD SECURITIES</h2>
     </div>
     <div class="info-grid">
       <!-- General Info -->
@@ -1138,7 +1128,7 @@ h2.sec-h2.light{color:var(--white);}
 ══════════════════════════════════ -->
 <div class="cta-wrap reveal">
   <h2>Sẵn sàng bắt đầu hành trình đầu tư?</h2>
-  <p>Đội ngũ chuyên gia DOBN Capital luôn sẵn sàng tư vấn và xây dựng danh mục phù hợp với mục tiêu của bạn.</p>
+  <p>Đội ngũ chuyên gia HTD SECURITIES luôn sẵn sàng tư vấn và xây dựng danh mục phù hợp với mục tiêu của bạn.</p>
   <div class="cta-btns">
     <a href="customer.html" class="btn-cta-dark"><i class="fas fa-user-tie"></i> Gặp Chuyên Gia Tư Vấn</a>
     <a href="products.html" class="btn-cta-outline"><i class="fas fa-briefcase"></i> Xem Sản Phẩm Đầu Tư</a>
@@ -1147,7 +1137,7 @@ h2.sec-h2.light{color:var(--white);}
 
 <!-- ══ FOOTER ══ -->
 <footer>
-  <p>© 2026 DOBN CAPITAL - Demo Website</p>
+  <p>© 2026 HTD SECURITIES - Demo Website</p>
 </footer>
 
 <script>

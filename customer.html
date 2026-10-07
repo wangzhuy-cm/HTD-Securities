@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dịch Vụ Tư Vấn — DOBN CAPITAL</title>
+<title>Dịch Vụ Tư Vấn — HTD SECURITIES</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -363,7 +363,7 @@ body{font-family:var(--ff-b);background:var(--cream);color:var(--ink);font-weigh
 <section class="svc-hero">
   <p class="bc"><i class="fas fa-home"></i> &nbsp;Trang Chủ &nbsp;/&nbsp; Dịch Vụ Tư Vấn</p>
   <h1>Investment<br><em>Recommendation Report</em></h1>
-  <p>Điền thông tin tài chính và hoàn thành khảo sát để nhận báo cáo khuyến nghị đầu tư cá nhân hoá từ đội ngũ DOBN Capital.</p>
+  <p>Điền thông tin tài chính và hoàn thành khảo sát để nhận báo cáo khuyến nghị đầu tư cá nhân hoá từ đội ngũ HTD SECURITIES.</p>
   <div class="step-pills">
     <div class="step-pill active"><span class="sp-num">1</span> Thông tin cá nhân</div>
     <div class="step-pill"><span class="sp-num">2</span> Tình hình tài chính</div>
@@ -386,7 +386,7 @@ body{font-family:var(--ff-b);background:var(--cream);color:var(--ink);font-weigh
     <img src="DOBN/logo.png">
     <div class="fch-divider"></div>
     <div class="fch-text">
-      <h2>DOBN CAPITAL</h2>
+      <h2>HTD SECURITIES</h2>
       <p>Investment Recommendation Report</p>
     </div>
   </div>
@@ -660,7 +660,7 @@ body{font-family:var(--ff-b);background:var(--cream);color:var(--ink);font-weigh
     <div style="display:flex;align-items:center;border-bottom:3px solid var(--navy);padding-bottom:20px;margin-bottom:28px">
       <img src="DOBN/logo.png" class="report-logo" style="margin-right:20px">
       <div>
-        <h1 style="font-family:var(--ff-d);font-size:2.6rem;font-weight:700;color:var(--navy);line-height:1">DOBN CAPITAL</h1>
+        <h1 style="font-family:var(--ff-d);font-size:2.6rem;font-weight:700;color:var(--navy);line-height:1">HTD SECURITIES</h1>
         <p style="font-size:.68rem;letter-spacing:5px;color:#888;margin-top:6px">INVESTMENT RECOMMENDATION REPORT</p>
       </div>
     </div>
@@ -721,7 +721,7 @@ body{font-family:var(--ff-b);background:var(--cream);color:var(--ink);font-weigh
     </div>
 
     <div class="pdf-footer">
-      <p>CÔNG TY CỔ PHẦN QUẢN LÝ QUỸ DOBN</p>
+      <p>CÔNG TY CỔ PHẦN CHỨNG KHOÁN HTD</p>
       <div class="pf-line"></div>
       <p>Page 1 / 2</p>
     </div>
@@ -739,7 +739,7 @@ body{font-family:var(--ff-b);background:var(--cream);color:var(--ink);font-weigh
     <div style="display:flex;align-items:center;border-bottom:2px solid var(--navy);padding-bottom:14px;margin-bottom:26px">
       <img src="DOBN/logo.png" style="height:60px;width:auto;object-fit:contain;margin-right:16px">
       <div>
-        <h1 style="font-family:var(--ff-d);font-size:1.8rem;font-weight:700;color:var(--navy);line-height:1">DOBN CAPITAL</h1>
+        <h1 style="font-family:var(--ff-d);font-size:1.8rem;font-weight:700;color:var(--navy);line-height:1">HTD SECURITIES</h1>
         <p style="font-size:.62rem;letter-spacing:4px;color:#888;margin-top:4px">INVESTMENT RECOMMENDATION REPORT</p>
       </div>
     </div>
@@ -779,7 +779,7 @@ body{font-family:var(--ff-b);background:var(--cream);color:var(--ink);font-weigh
     </div>
 
     <div class="pdf-footer">
-      <p>CÔNG TY CỔ PHẦN QUẢN LÝ QUỸ DOBN</p>
+      <p>CÔNG TY CỔ PHẦN CHỨNG KHOÁN HTD</p>
       <div class="pf-line"></div>
       <p>Page 2 / 2</p>
     </div>
@@ -881,7 +881,7 @@ document.getElementById('financialForm').addEventListener('submit',function(e){
   container.innerHTML='';
   recommendedStocks.forEach(stock=>{
     container.innerHTML+=`
-    <a href="pdf/${stock.code}.pdf" target="_blank" class="pdf-stock-card" style="text-decoration:none">
+    <a href="png/${stock.code === 'BID' ? 'BIDV' : stock.code}.png" target="_blank" class="pdf-stock-card" style="text-decoration:none">
       <img src="logo/${stock.code}.png" onerror="this.style.display='none'">
       <h3>${stock.code}</h3>
       <p>${stock.name}</p>
@@ -916,13 +916,13 @@ async function downloadPDFFile(){
   pdf.addPage();
   const c2=await html2canvas(page2,{scale:2,useCORS:true,backgroundColor:'#ffffff'});
   pdf.addImage(c2.toDataURL('image/png'),'PNG',0,0,W,H);
-  pdf.save('DOBN_Capital_Report.pdf');
+  pdf.save('HTD_Securities_Report.pdf');
 }
 </script>
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 DOBN CAPITAL - Demo Website</p>
+  <p>© 2026 HTD SECURITIES - Demo Website</p>
 </footer>
 </body>
 </html>

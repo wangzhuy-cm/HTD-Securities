@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════
-//  DOBN Capital — Frontend: Gửi PDF qua Email
+//  HTD SECURITIES — Frontend: Gửi PDF qua Email
 //
 //  Thay thế hàm downloadPDFFile() hiện tại trong customer.html
 //  bằng hàm downloadPDFFile() bên dưới.
@@ -38,7 +38,7 @@ async function downloadPDFFile() {
     pdf.addImage(c2.toDataURL('image/png'), 'PNG', 0, 0, W, H);
 
     // 2. Tải xuống cho người dùng (vẫn giữ tính năng download local)
-    pdf.save('DOBN_Capital_Report.pdf');
+    pdf.save('HTD_Securities_Report.pdf');
 
     // 3. Lấy base64 để gửi email (KHÔNG có prefix "data:application/pdf;base64,")
     const pdfBase64 = pdf.output('datauristring').split(',')[1];

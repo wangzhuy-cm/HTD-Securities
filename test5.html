@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DOBN Capital - Investment Recommendation Report</title>
+<title>HTD SECURITIES - Investment Recommendation Report</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -141,7 +141,7 @@ class="bg-white rounded-2xl shadow-2xl p-10 mb-12">
     <div>
 
         <h1 class="text-5xl font-black text-[#04045d]">
-            DOBN CAPITAL
+            HTD SECURITIES
         </h1>
 
         <p class="text-gray-500 tracking-[5px] mt-2">
@@ -576,7 +576,7 @@ class="w-full bg-[#04045d] text-white py-5 rounded text-xl font-bold">
         <div class="flex items-center border-b-4 border-[#04045d] pb-6 mb-10">
             <img src="DOBN/logo.png" class="report-logo mr-6">
             <div>
-                <h1 class="text-5xl font-black text-[#04045d]">DOBN CAPITAL</h1>
+                <h1 class="text-5xl font-black text-[#04045d]">HTD SECURITIES</h1>
                 <p class="tracking-[5px] text-gray-500 mt-2">INVESTMENT RECOMMENDATION REPORT</p>
             </div>
         </div>
@@ -672,7 +672,7 @@ class="w-full bg-[#04045d] text-white py-5 rounded text-xl font-bold">
 <!-- FOOTER PDF -->
 <div style="position:absolute; bottom:24px; right:40px; text-align:right;">
     <p style="font-size:11px; color:#04045d; font-weight:700; letter-spacing:1px;">
-        CÔNG TY CỔ PHẦN QUẢN LÝ QUỸ DOBN
+        CÔNG TY CỔ PHẦN CHỨNG KHOÁN HTD
     </p>
 </div>
     </div>
@@ -687,7 +687,7 @@ class="w-full bg-[#04045d] text-white py-5 rounded text-xl font-bold">
         <div class="flex items-center border-b-2 border-[#04045d] pb-4 mb-8">
             <img src="DOBN/logo.png" class="report-logo mr-6">
             <div>
-                <h1 class="text-3xl font-black text-[#04045d]">DOBN CAPITAL</h1>
+                <h1 class="text-3xl font-black text-[#04045d]">HTD SECURITIES</h1>
                 <p class="tracking-[3px] text-gray-500 text-sm mt-1">INVESTMENT RECOMMENDATION REPORT</p>
             </div>
         </div>
@@ -730,7 +730,7 @@ class="w-full bg-[#04045d] text-white py-5 rounded text-xl font-bold">
 <!-- FOOTER PDF -->
 <div style="position:absolute; bottom:24px; right:40px; text-align:right;">
     <p style="font-size:11px; color:#04045d; font-weight:700; letter-spacing:1px;">
-        CÔNG TY CỔ PHẦN QUẢN LÝ QUỸ DOBN
+        CÔNG TY CỔ PHẦN CHỨNG KHOÁN HTD
     </p>
 </div>
     </div>
@@ -940,7 +940,7 @@ document.getElementById('financialForm')
 
         container.innerHTML += `
 
-        <a href="pdf/${stock.code}.pdf"
+        <a href="png/${stock.code === 'BID' ? 'BIDV' : stock.code}.png"
         target="_blank"
         class="border rounded-xl p-4 text-center hover:shadow-xl transition bg-white">
 
@@ -1011,7 +1011,7 @@ async function downloadPDFFile() {
     const canvas2 = await html2canvas(page2, { scale: 2, useCORS: true, backgroundColor: '#ffffff' });
     pdf.addImage(canvas2.toDataURL('image/png'), 'PNG', 0, 0, pdfWidth, pdfHeight);
 
-    pdf.save('DOBN_Capital_Report.pdf');
+    pdf.save('HTD_Securities_Report.pdf');
 }
 </script>
     </div> 
@@ -1026,7 +1026,7 @@ async function downloadPDFFile() {
 </script>
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 DOBN CAPITAL - Demo Website</p>
+  <p>© 2026 HTD SECURITIES - Demo Website</p>
 </footer>
 
 </body>
